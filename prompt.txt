@@ -1,1 +1,38 @@
-This is an improvement.
+Prompt Iteration Report – Revised Version
+Name: Prajwal
+Date: 25 November 2025
+🔹 Task Objective
+Refine a prompt through multiple iterations until the AI consistently produces the required output format 5 times consecutively.
+Selected Format → Raw JSON list of vehicles, no extra explanation.
+🔹 Failed Prompt Iterations
+Attempt	Prompt	Output Problem
+1	“Give a JSON list of vehicles.”	AI added a sentence before the JSON.
+2	“Generate JSON only of vehicle names.”	Returned JSON + extra note.
+3	“Return only the raw JSON list of vehicles.”	Output was inside a markdown block.
+4	“Strict JSON output. No explanation.”	Extra spacing + formatting issues.
+5	“Output only raw JSON array of vehicles. NOTHING else.”	First perfect raw JSON output.
+🔹 Final Perfect Prompt
+You must follow my instructions with zero deviation.
+
+Return ONLY the raw JSON array of vehicles.
+No explanation, no extra text, no markdown, no formatting.
+
+The output must look exactly like this:
+["Car", "Bus", "Bike", "Truck"]
+
+Now generate the JSON.
+🔹 Perfect Output (5 Times)
+["Car", "Bus", "Bike", "Truck"]
+["Car", "Bus", "Bike", "Truck"]
+["Car", "Bus", "Bike", "Truck"]
+["Car", "Bus", "Bike", "Truck"]
+["Car", "Bus", "Bike", "Truck"]
+🔹 Learning / Reflection
+This exercise demonstrates that precise, strict prompting significantly improves reliability. The AI follows patterns unless explicitly instructed not to. Controlling the format requires banning unwanted structures such as markdown, explanations, or spacing. Effective prompting is iterative debugging.
+🔹 Submission Checklist
+Requirement	Status
+Perfect Prompt created	✔
+Perfect output 5 times	✔
+Failed prompts documented	✔
+Reflection included	✔
+
